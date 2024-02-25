@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "BinaryQRGenerator": {
+      "commandName": "Project",
+      "commandLineArgs": "-i C:\\Temp\\Earth_resized.png -o C:\\Temp\\QR.png"
+    }
+  }
+}
