@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:camera="clr-namespace:Camera.MAUI;assembly=Camera.MAUI"
+             xmlns:media="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="BinaryQRCodeReader.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <camera:CameraView
+                x:Name="cameraView"
+                WidthRequest="300"
+                HeightRequest="300"
+                CamerasLoaded="cameraView_CamerasLoaded"
+                BarcodeDetected="cameraView_BarcodeDetected"
+                BarCodeDetectionEnabled="True"/>
+
+            <Button
+                x:Name="OpenFile"
+                Text="Read from file" 
+                Clicked="OpenFile_Clicked" />
+
+            <Button
+                x:Name="Still"
+                Text="Analyze"
+                Clicked="Still_Clicked" />
+
+            <Label
+                x:Name="BarcodeInfo"
+                HorizontalOptions="Fill" />
+
+            <Image
+                x:Name="PreviewImage"
+                WidthRequest="300"
+                HeightRequest="300"
+                IsVisible="false"/>
+
+            <media:MediaElement
+                x:Name="MediaPlayer"
+                WidthRequest="300"
+                HeightRequest="300"
+                IsVisible="false"/>
+
+            <Label
+                x:Name="PreviewLabel"
+                WidthRequest="300"
+                HeightRequest="300"
+                IsVisible="false"/>
+
+            <Button
+                x:Name="SaveBtn"
+                Text="Save" 
+                Clicked="SaveBtn_Clicked"
+                HorizontalOptions="Fill" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
