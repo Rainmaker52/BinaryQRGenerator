@@ -5,7 +5,12 @@ VisualStudioVersion = 17.10.34607.79
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinaryQRGenerator", "BinaryQRGenerator\BinaryQRGenerator.csproj", "{CD2E2EA9-123C-458A-8975-E3F629B62874}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryQRCodeReader", "BinaryQRCodeReader\BinaryQRCodeReader.csproj", "{C05104EB-DACB-4D00-A1A6-682B8573DB95}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinaryQRCodeReader", "BinaryQRCodeReader\BinaryQRCodeReader.csproj", "{C05104EB-DACB-4D00-A1A6-682B8573DB95}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0825ABDA-E2DF-45A2-8DF3-AF76A18DDD01}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
